@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace NLayeredArchitectureSample.Model
 {
-    public class Class1
+
+    public abstract class BaseEntity
     {
+
+    }
+
+    public abstract class Entity<T> : BaseEntity, IEntity<T>
+    {
+        public virtual T Id { get; set; }
     }
 }

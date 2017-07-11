@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NLayeredArchitectureSample.Repository
+namespace NLayeredArchitectureSample.Model
 {
-    public class Class1
+    public interface IEntity<T>
     {
+        T Id { get; set; }
     }
 }
