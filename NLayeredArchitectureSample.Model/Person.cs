@@ -34,6 +34,4 @@ namespace NLayeredArchitectureSample.Model
         public virtual Country Country { get; set; }
 
     }
-?
-
 }
