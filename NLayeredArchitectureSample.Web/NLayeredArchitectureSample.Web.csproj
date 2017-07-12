@@ -176,6 +176,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CountryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -245,6 +246,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Country\Create.cshtml" />
+    <Content Include="Views\Country\Delete.cshtml" />
+    <Content Include="Views\Country\Details.cshtml" />
+    <Content Include="Views\Country\Edit.cshtml" />
+    <Content Include="Views\Country\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -265,6 +271,10 @@
     <ProjectReference Include="..\NLayeredArchitectureSample.Repository\NLayeredArchitectureSample.Repository.csproj">
       <Project>{E0F4606B-9A72-4542-9E36-8683687AC690}</Project>
       <Name>NLayeredArchitectureSample.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NLayeredArchitectureSample.Service\NLayeredArchitectureSample.Service.csproj">
+      <Project>{6DCD07C1-9CFB-4B86-B8BB-DA7CC48816FA}</Project>
+      <Name>NLayeredArchitectureSample.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
