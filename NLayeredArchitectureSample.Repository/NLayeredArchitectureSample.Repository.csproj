@@ -49,11 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CountryRepository.cs" />
     <Compile Include="GenericRepository.cs" />
+    <Compile Include="ICountryRepository.cs" />
     <Compile Include="IGenericRepository.cs" />
     <Compile Include="IPersonRepository.cs" />
+    <Compile Include="IUnitOfWork.cs" />
     <Compile Include="PersonRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NLayeredArchitectureSample.Model\NLayeredArchitectureSample.Model.csproj">
